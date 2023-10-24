@@ -1,0 +1,54 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: #dfbf0f;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #e79b28;
+  text-align: center;
+}
+
+main {
+  background: #688a3c;
+  text-align: center;
+  flex: 1;
+}
+
+main p {
+  padding: 20px;
+}
+
+footer {
+  background: #ae94f5;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 40vw;
+        height: 50vh;
+    }
+
+    main p:nth-child(2) {
+        flex-basis: 60vw;
+    }
+}
